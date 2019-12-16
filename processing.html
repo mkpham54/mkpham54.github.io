@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        </head>
+
+        <style>
+
+            h1 {
+                position: relative;
+                left: 25px;
+                font-size: 100px;
+            }
+
+            h2 {
+                position: relative;
+                left: 50px;
+            }
+
+            body {
+                background-color: #DCDCDC;
+            }
+
+            .bigger {
+              font-size: 100%;
+            }
+
+
+            //a:link {
+                text-decoration: none;
+                font-family: ;
+            }
+
+
+            a:link, a:visited {
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                opacity: 1;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+            }
+
+            a:hover, a:active {
+                background-color: lightgrey;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+
+            }
+
+
+            .card button:hover {
+                background-color: lightgrey;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+
+            }
+
+            .card a:link, a:visited {
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                opacity: 1;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+
+
+
+            </style>
+
+
+        <title>kp portfolio</title>
+
+        <body>
+
+            <div class="container">
+                <ul class="pagination">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="personal.html">personal works</a></li>
+                    <li><a href="glitch.html">glitch art</a></li>
+                    <li><a href="memes.html">memes mashup</a></li>
+                    <li><a href="minecraftart.html">minecraft art</a></li>
+                    <li><a href="3dprint.html">3d printing</a></li>
+                    <li><a href="netart.html">net.art</a></li>
+                    <li><a href="processing.html">processing self-portrait</a></li>
+                    <li><a href="diy.html">diy photoshop</a></li>
+                    <li><a href="final.html">final project</a></li>
+                </ul>
+            </div>
+
+        </body>
+
+            <h1>processing self-portrait</h1>
+            <center><img src="self portrait.png"></center>
+
+            <h2>code</h2>
+            function setup() {
+            createCanvas(600, 600);
+            }
+
+
+            function draw() {
+              background(86,126,95);
+
+              //hair
+              beginShape();
+
+              //head
+              beginShape();
+              fill(195, 160, 122);
+              ellipse(300, 250, 300);
+              endShape();
+
+              //red outline
+              beginShape();
+              fill(177, 0, 0);
+              ellipse(260, 230, 80);
+              endShape();
+
+              beginShape();
+              fill(177, 0, 0);
+              ellipse(335, 230, 80);
+              endShape();
+
+              //eyes
+              beginShape();
+              fill(221, 167, 151);
+              ellipse(260, 230, 75);
+              endShape();
+
+              beginShape();
+              fill(221, 167, 151);
+              ellipse(335, 230, 75);
+              endShape();
+
+              //pupils
+              beginShape();
+              fill(34, 2, 2);
+              ellipse(260, 230, 35);
+              endShape();
+
+              beginShape();
+              fill(35, 2, 2);
+              ellipse(335, 230, 35);
+              endShape();
+
+
+              //mouf
+              beginShape();
+              fill(148, 78, 58);
+              ellipse(290, 310, 170, 20);
+
+              //glasses
+              beginShape();
+              noFill();
+              strokeWeight(4);
+              ellipse(230, 230, 110);
+              endShape();
+
+              beginShape();
+              noFill();
+              strokeWeight(4);
+              ellipse(340, 230, 110);
+              endShape();
+
+              beginShape();
+              fill(0, 66, 20)
+              quad(100, 400, 500, 400, 450, 600, 150, 600);
+
+
+            }
+
+
+    </html>
